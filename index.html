@@ -4,59 +4,68 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cositascool</title>
-  <!-- Asegúrate de que tu CSS está en /css/style.css -->
+  <!-- RUTAS CORRECTAS -->
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
   <header>
     <h1>Cositascool 🛍️</h1>
     <nav>
-      <!-- Botón general para hablar por WhatsApp -->
-      <button onclick="openWhatsAppGeneral()">🛒 Contactar para comprar</button>
+      <button>🛒 Finalizar compra</button>
     </nav>
   </header>
 
   <main>
     <h2>Productos</h2>
     <div class="product-list">
-      <!-- Producto 1 -->
       <div class="product">
         <img src="images/ventosa-movil.jpg" alt="Ventosa para móvil">
         <h3>Ventosa para móvil</h3>
         <p>€6,40</p>
-        <button onclick="openWhatsApp('Ventosa para móvil', '6,40')">Contactar por WhatsApp</button>
+        <a class="btn" target="_blank" rel="noopener"
+           href="https://wa.me/34635782353?text=Hola%2C%20quiero%20comprar%20la%20Ventosa%20para%20m%C3%B3vil%20(6%2C40%E2%82%AC).">
+          Contactar por WhatsApp
+        </a>
       </div>
 
-      <!-- Producto 2 -->
       <div class="product">
         <img src="images/stitch-pizza.png" alt="Muñeco Stitch Labubu pizza">
         <h3>Muñeco Stitch Labubu pizza</h3>
         <p>€10,50</p>
-        <button onclick="openWhatsApp('Muñeco Stitch Labubu pizza', '10,50')">Contactar por WhatsApp</button>
+        <a class="btn" target="_blank" rel="noopener"
+           href="https://wa.me/34635782353?text=Hola%2C%20quiero%20comprar%20el%20Mu%C3%B1eco%20Stitch%20Labubu%20pizza%20(10%2C50%E2%82%AC).">
+          Contactar por WhatsApp
+        </a>
       </div>
 
-      <!-- Producto 3 -->
       <div class="product">
         <img src="images/tarjeta-gps.png" alt="Tarjeta con GPS antirrobo o pérdida">
         <h3>Tarjeta con GPS antirrobo o pérdida</h3>
         <p>€15,76</p>
-        <button onclick="openWhatsApp('Tarjeta con GPS antirrobo o pérdida', '15,76')">Contactar por WhatsApp</button>
+        <a class="btn" target="_blank" rel="noopener"
+           href="https://wa.me/34635782353?text=Hola%2C%20quiero%20comprar%20la%20Tarjeta%20con%20GPS%20antirrobo%20o%20p%C3%A9rdida%20(15%2C76%E2%82%AC).">
+          Contactar por WhatsApp
+        </a>
       </div>
 
-      <!-- Producto 4 -->
       <div class="product">
         <img src="images/lampara-patito.png" alt="Lámpara con forma de patito">
         <h3>Lámpara con forma de patito</h3>
         <p>€15,60</p>
-        <button onclick="openWhatsApp('Lámpara con forma de patito', '15,60')">Contactar por WhatsApp</button>
+        <a class="btn" target="_blank" rel="noopener"
+           href="https://wa.me/34635782353?text=Hola%2C%20quiero%20comprar%20la%20L%C3%A1mpara%20con%20forma%20de%20patito%20(15%2C60%E2%82%AC).">
+          Contactar por WhatsApp
+        </a>
       </div>
 
-      <!-- Producto 5 -->
       <div class="product">
         <img src="images/ventosas-corazon.png" alt="Ventosas móvil corazón">
         <h3>Ventosas móvil corazón</h3>
         <p>€5,30</p>
-        <button onclick="openWhatsApp('Ventosas móvil corazón', '5,30')">Contactar por WhatsApp</button>
+        <a class="btn" target="_blank" rel="noopener"
+           href="https://wa.me/34635782353?text=Hola%2C%20quiero%20comprar%20las%20Ventosas%20m%C3%B3vil%20coraz%C3%B3n%20(5%2C30%E2%82%AC).">
+          Contactar por WhatsApp
+        </a>
       </div>
     </div>
   </main>
@@ -65,20 +74,7 @@
     <p>© 2025 Cositascool</p>
   </footer>
 
-  <!-- Funciones de WhatsApp (inline para que funcione sin tocar js/script.js) -->
-  <script>
-    const PHONE = "34635782353"; // tu número en formato internacional sin +
-    function openWhatsApp(producto, precio) {
-      const msg = encodeURIComponent(`Hola, me interesa "${producto}" (precio ${precio} €).`);
-      window.location.href = `https://wa.me/${PHONE}?text=${msg}`;
-    }
-    function openWhatsAppGeneral() {
-      const msg = encodeURIComponent("Hola, me gustaría comprar en Cositascool. ¿Me ayudas?");
-      window.location.href = `https://wa.me/${PHONE}?text=${msg}`;
-    }
-  </script>
-
-  <!-- Mantengo tu script por si lo usas para otras cosas -->
+  <!-- RUTA CORRECTA -->
   <script src="js/script.js"></script>
 </body>
 </html>

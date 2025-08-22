@@ -4,52 +4,59 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cositascool</title>
-  <link rel="stylesheet" href="style.css"/>
+  <!-- Asegúrate de que tu CSS está en /css/style.css -->
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
   <header>
     <h1>Cositascool 🛍️</h1>
     <nav>
-      <button onclick="checkout()">🛒 Finalizar compra</button>
+      <!-- Botón general para hablar por WhatsApp -->
+      <button onclick="openWhatsAppGeneral()">🛒 Contactar para comprar</button>
     </nav>
   </header>
 
   <main>
     <h2>Productos</h2>
     <div class="product-list">
+      <!-- Producto 1 -->
       <div class="product">
-        <img src="ventosa-movil.jpg" alt="Ventosa para móvil">
+        <img src="images/ventosa-movil.jpg" alt="Ventosa para móvil">
         <h3>Ventosa para móvil</h3>
         <p>€6,40</p>
-        <button onclick="addToCart('Ventosa para móvil', 6.40)">Añadir al carrito</button>
+        <button onclick="openWhatsApp('Ventosa para móvil', '6,40')">Contactar por WhatsApp</button>
       </div>
 
+      <!-- Producto 2 -->
       <div class="product">
-        <img src="stitch-pizza.png" alt="Muñeco Stitch Labubu pizza">
+        <img src="images/stitch-pizza.png" alt="Muñeco Stitch Labubu pizza">
         <h3>Muñeco Stitch Labubu pizza</h3>
         <p>€10,50</p>
-        <button onclick="addToCart('Muñeco Stitch Labubu pizza', 10.50)">Añadir al carrito</button>
+        <button onclick="openWhatsApp('Muñeco Stitch Labubu pizza', '10,50')">Contactar por WhatsApp</button>
       </div>
 
+      <!-- Producto 3 -->
       <div class="product">
-        <img src="tarjeta-gps.png" alt="Tarjeta con GPS antirrobo o pérdida">
+        <img src="images/tarjeta-gps.png" alt="Tarjeta con GPS antirrobo o pérdida">
         <h3>Tarjeta con GPS antirrobo o pérdida</h3>
         <p>€15,76</p>
-        <button onclick="addToCart('Tarjeta con GPS antirrobo o pérdida', 15.76)">Añadir al carrito</button>
-      </div>
-    
-      <div class="product">
-        <img src="lampara-patito.png" alt="Lámpara con forma de patito">
-        <h3>Lámpara con forma de patito</h3>
-        <p>€15,60</p>
-        <button onclick="addToCart('Lámpara con forma de patito', 15.60)">Añadir al carrito</button>
+        <button onclick="openWhatsApp('Tarjeta con GPS antirrobo o pérdida', '15,76')">Contactar por WhatsApp</button>
       </div>
 
+      <!-- Producto 4 -->
       <div class="product">
-        <img src="ventosas-corazon.png" alt="Ventosas móvil corazón">
+        <img src="images/lampara-patito.png" alt="Lámpara con forma de patito">
+        <h3>Lámpara con forma de patito</h3>
+        <p>€15,60</p>
+        <button onclick="openWhatsApp('Lámpara con forma de patito', '15,60')">Contactar por WhatsApp</button>
+      </div>
+
+      <!-- Producto 5 -->
+      <div class="product">
+        <img src="images/ventosas-corazon.png" alt="Ventosas móvil corazón">
         <h3>Ventosas móvil corazón</h3>
         <p>€5,30</p>
-        <button onclick="addToCart('Ventosas móvil corazón', 5.30)">Añadir al carrito</button>
+        <button onclick="openWhatsApp('Ventosas móvil corazón', '5,30')">Contactar por WhatsApp</button>
       </div>
     </div>
   </main>
@@ -58,6 +65,20 @@
     <p>© 2025 Cositascool</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Funciones de WhatsApp (inline para que funcione sin tocar js/script.js) -->
+  <script>
+    const PHONE = "34635782353"; // tu número en formato internacional sin +
+    function openWhatsApp(producto, precio) {
+      const msg = encodeURIComponent(`Hola, me interesa "${producto}" (precio ${precio} €).`);
+      window.location.href = `https://wa.me/${PHONE}?text=${msg}`;
+    }
+    function openWhatsAppGeneral() {
+      const msg = encodeURIComponent("Hola, me gustaría comprar en Cositascool. ¿Me ayudas?");
+      window.location.href = `https://wa.me/${PHONE}?text=${msg}`;
+    }
+  </script>
+
+  <!-- Mantengo tu script por si lo usas para otras cosas -->
+  <script src="js/script.js"></script>
 </body>
 </html>

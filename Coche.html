@@ -4,51 +4,69 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cositascool · Coche</title>
-  <link rel="stylesheet" href="css/style.css?v=4"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
+  <input type="checkbox" id="nav-toggle" hidden>
+
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="logo">Cositascool</a>
-      <nav class="nav">
-        <a href="index.html" class="nav-link">Inicio</a>
-        <a href="perritos.html" class="nav-link">Perritos</a>
-        <a href="coche.html" class="nav-link active">Coche</a>
-        <a href="index.html#contacto" class="nav-link">Contacto</a>
+      <label class="hamburger" for="nav-toggle" aria-label="Abrir menú">☰</label>
+      <a class="brand" href="index.html">Cositascool <span class="emoji">🛍️</span></a>
+      <nav class="top-nav">
+        <a href="contacto.html" class="pill">Contacto</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero hero-small">
-    <div class="container">
-      <h1>Cositas cool para el coche 🚗</h1>
-      <p>Organización y accesorios prácticos para tu coche.</p>
-    </div>
-  </section>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <div class="sidebar-title">Categorías</div>
+        <nav class="side-nav">
+          <a href="index.html">🏠 Inicio</a>
+          <a href="perritos.html">🐶 Perritos</a>
+          <a class="active" href="coche.html">🚗 Coche</a>
+          <a href="hogar.html">🏡 Hogar</a>
+        </nav>
+      </div>
+    </aside>
 
-  <main class="container">
-    <div class="grid">
-      <!-- EJEMPLO: cambia imagen/nombre/precio cuando tengas los productos -->
-      <article class="card">
-        <img src="images/ventosa-movil.jpg" alt="Producto de ejemplo coche">
-        <div class="card-body">
-          <h3>Soporte móvil (ejemplo)</h3>
-          <p class="price">€8,90</p>
-          <button class="whatsapp-btn"
-            onclick="window.open('https://wa.me/34635782353?text=Hola%2C%20quiero%20comprar%20%22Soporte%20m%C3%B3vil%20(coche)%22%20(8%2C90%20%E2%82%AC)%20desde%20Cositascool.', '_blank')">
-            Contactar por WhatsApp
-          </button>
+    <main class="content">
+      <section class="hero">
+        <div class="container">
+          <h1>Cositas cool para el coche 🚗</h1>
+          <p>Organización y accesorios prácticos para tu coche.</p>
         </div>
-      </article>
-    </div>
-  </main>
+      </section>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© 2025 Cositascool · 📞 <a href="tel:+34635782353">+34 635 782 353</a></p>
-    </div>
-  </footer>
+      <section class="container">
+        <h2 class="section-title">Productos para coche</h2>
+        <div class="grid">
+          <!-- Ejemplo de producto -->
+          <article class="card">
+            <div class="img-wrap">
+              <img src="images/ventosa-movil.jpg" alt="Soporte móvil coche">
+            </div>
+            <h3 class="title">Soporte móvil coche</h3>
+            <p class="price">€8,90</p>
+            <a class="btn btn-wa" target="_blank"
+               href="https://api.whatsapp.com/send?phone=34635782353&text=Hola,%20quiero%20comprar%20Soporte%20móvil%20coche%20(8,90€)">
+              Contactar por WhatsApp
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="container">
+          <p>© 2025 Cositascool · Hecho con cariño 💖</p>
+        </div>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>

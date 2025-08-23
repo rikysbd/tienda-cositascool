@@ -3,86 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cositascool</title>
-  <link rel="stylesheet" href="css/style.css"/>
+  <title>Cositascool · Tienda</title>
+  <link rel="stylesheet" href="css/style.css?v=4"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Cositascool 🛍️</h1>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Cositascool</a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">Inicio</a>
+        <a href="perritos.html" class="nav-link">Perritos</a>
+        <a href="coche.html" class="nav-link">Coche</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h2>Productos</h2>
-    <div class="product-list">
+  <section class="hero">
+    <div class="container">
+      <h1>Cositas cool para tu día a día ✨</h1>
+      <p>Productos pequeños, originales y listos para pedir por WhatsApp.</p>
+    </div>
+  </section>
 
+  <main class="container">
+    <h2>Todos los productos</h2>
+
+    <div class="grid">
       <!-- Ventosa para móvil -->
-      <div class="product">
+      <article class="card">
         <img src="images/ventosa-movil.jpg" alt="Ventosa para móvil">
-        <h3>Ventosa para móvil</h3>
-        <p>€6,40</p>
-        <button class="whatsapp-btn" onclick="contactarWhatsApp('Ventosa para móvil', '6,40')">
-          Contactar por WhatsApp
-        </button>
-      </div>
+        <div class="card-body">
+          <h3>Ventosa para móvil</h3>
+          <p class="price">€6,40</p>
+          <button class="whatsapp-btn"
+            onclick="window.open('https://wa.me/34635782353?text=Hola%2C%20quiero%20comprar%20%22Ventosa%20para%20m%C3%B3vil%22%20(6%2C40%20%E2%82%AC)%20desde%20Cositascool.', '_blank')">
+            Contactar por WhatsApp
+          </button>
+        </div>
+      </article>
 
       <!-- Muñeco Stitch Labubu pizza -->
-      <div class="product">
+      <article class="card">
         <img src="images/stitch-pizza.png" alt="Muñeco Stitch Labubu pizza">
-        <h3>Muñeco Stitch Labubu pizza</h3>
-        <p>€10,50</p>
-        <button class="whatsapp-btn" onclick="contactarWhatsApp('Muñeco Stitch Labubu pizza', '10,50')">
-          Contactar por WhatsApp
-        </button>
-      </div>
+        <div class="card-body">
+          <h3>Muñeco Stitch Labubu pizza</h3>
+          <p class="price">€10,50</p>
+          <button class="whatsapp-btn"
+            onclick="window.open('https://wa.me/34635782353?text=Hola%2C%20quiero%20comprar%20%22Mu%C3%B1eco%20Stitch%20Labubu%20pizza%22%20(10%2C50%20%E2%82%AC)%20desde%20Cositascool.', '_blank')">
+            Contactar por WhatsApp
+          </button>
+        </div>
+      </article>
 
       <!-- Tarjeta con GPS antirrobo o pérdida -->
-      <div class="product">
+      <article class="card">
         <img src="images/tarjeta-gps.png" alt="Tarjeta con GPS antirrobo o pérdida">
-        <h3>Tarjeta con GPS antirrobo o pérdida</h3>
-        <p>€15,76</p>
-        <button class="whatsapp-btn" onclick="contactarWhatsApp('Tarjeta con GPS antirrobo o pérdida', '15,76')">
-          Contactar por WhatsApp
-        </button>
-      </div>
+        <div class="card-body">
+          <h3>Tarjeta con GPS antirrobo o pérdida</h3>
+          <p class="price">€15,76</p>
+          <button class="whatsapp-btn"
+            onclick="window.open('https://wa.me/34635782353?text=Hola%2C%20quiero%20comprar%20%22Tarjeta%20con%20GPS%20antirrobo%20o%20p%C3%A9rdida%22%20(15%2C76%20%E2%82%AC)%20desde%20Cositascool.', '_blank')">
+            Contactar por WhatsApp
+          </button>
+        </div>
+      </article>
 
       <!-- Lámpara con forma de patito -->
-      <div class="product">
+      <article class="card">
         <img src="images/lampara-patito.png" alt="Lámpara con forma de patito">
-        <h3>Lámpara con forma de patito</h3>
-        <p>€15,60</p>
-        <button class="whatsapp-btn" onclick="contactarWhatsApp('Lámpara con forma de patito', '15,60')">
-          Contactar por WhatsApp
-        </button>
-      </div>
+        <div class="card-body">
+          <h3>Lámpara con forma de patito</h3>
+          <p class="price">€15,60</p>
+          <button class="whatsapp-btn"
+            onclick="window.open('https://wa.me/34635782353?text=Hola%2C%20quiero%20comprar%20%22L%C3%A1mpara%20con%20forma%20de%20patito%22%20(15%2C60%20%E2%82%AC)%20desde%20Cositascool.', '_blank')">
+            Contactar por WhatsApp
+          </button>
+        </div>
+      </article>
 
       <!-- Ventosas móvil corazón -->
-      <div class="product">
+      <article class="card">
         <img src="images/ventosas-corazon.png" alt="Ventosas móvil corazón">
-        <h3>Ventosas móvil corazón</h3>
-        <p>€5,30</p>
-        <button class="whatsapp-btn" onclick="contactarWhatsApp('Ventosas móvil corazón', '5,30')">
-          Contactar por WhatsApp
-        </button>
-      </div>
-
+        <div class="card-body">
+          <h3>Ventosas móvil corazón</h3>
+          <p class="price">€5,30</p>
+          <button class="whatsapp-btn"
+            onclick="window.open('https://wa.me/34635782353?text=Hola%2C%20quiero%20comprar%20%22Ventosas%20m%C3%B3vil%20coraz%C3%B3n%22%20(5%2C30%20%E2%82%AC)%20desde%20Cositascool.', '_blank')">
+            Contactar por WhatsApp
+          </button>
+        </div>
+      </article>
     </div>
   </main>
 
-  <footer>
-    <p>© 2025 Cositascool · 📞 
-      <a href="tel:+34635782353" style="color:inherit;text-decoration:underline;">+34 635 782 353</a>
-    </p>
+  <footer id="contacto" class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Cositascool · 📞 <a href="tel:+34635782353">+34 635 782 353</a></p>
+    </div>
   </footer>
-
-  <!-- Script para WhatsApp -->
-  <script>
-    const WHATSAPP_PHONE = "34635782353"; // tu número sin el +
-
-    function contactarWhatsApp(nombreProducto, precio) {
-      const texto = `Hola, quiero comprar "${nombreProducto}" (${precio} €) desde Cositascool.`;
-      const url = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(texto)}`;
-      window.open(url, "_blank");
-    }
-  </script>
 </body>
 </html>

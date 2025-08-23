@@ -14,12 +14,11 @@ header h1{margin:0;font-size:20px}.contact-btn{background:#111;color:#fff;text-d
 .category-nav{display:flex;flex-direction:column;gap:10px}
 .category-nav a{display:flex;gap:10px;text-decoration:none;color:#222;background:#fff;border:1px solid #eee;border-radius:12px;padding:12px 14px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
 .main{min-width:0}.hero{background:linear-gradient(90deg,#ffe5f1,#e8f1ff);border:1px solid #f0f0f0;border-radius:var(--r);padding:24px;margin-bottom:20px}
-.hero h2{margin:0 0 8px;font-size:28px}.products h3.section{margin:0 0 14px;font-size:22px}
-.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
-.card{background:#fff;border:1px solid #eee;border-radius:var(--r);padding:14px;box-shadow:0 1px 2px rgba(0,0,0,.04);display:flex;flex-direction:column}
-.card img{width:100%;height:220px;object-fit:cover;border-radius:12px}
-.card h4{margin:10px 0 6px;font-size:16px}.price{margin:0 0 8px;color:#111;font-weight:700}
-.whatsapp-btn{align-self:flex-start;display:inline-block;background:#25D366;color:#fff;text-decoration:none;font-weight:700;border-radius:10px;padding:8px 12px;font-size:14px;box-shadow:0 2px 0 #1ea955}
+.hero h2{margin:0 0 8px;font-size:28px}
+.section{margin:0 0 14px;font-size:22px}
+.empty{background:#fff;border:1px solid #eee;border-radius:16px;padding:20px;text-align:center;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.empty p{margin:0 0 12px;font-weight:600}
+.whatsapp-btn{display:inline-block;background:#25D366;color:#fff;text-decoration:none;font-weight:700;border-radius:10px;padding:8px 12px;font-size:14px;box-shadow:0 2px 0 #1ea955}
 footer{text-align:center;color:#777;font-size:12px;padding:24px 0 40px}
 @media(max-width:900px){.layout{grid-template-columns:1fr}.sidebar{position:static}}
 </style>
@@ -48,18 +47,14 @@ footer{text-align:center;color:#777;font-size:12px;padding:24px 0 40px}
       <p>Detalles útiles, tiernos y originales para los más peques.</p>
     </section>
 
-    <section class="products">
-      <h3 class="section">Productos para bebés</h3>
-      <div class="grid">
-        <article class="card">
-          <img src="images/stitch-pizza.png" alt="Muñeco Stitch Labubu pizza">
-          <h4>Muñeco Stitch Labubu pizza</h4>
-          <p class="price">€10,50</p>
-          <a class="whatsapp-btn" target="_blank"
-             href="https://api.whatsapp.com/send?phone=34635782353&text=Hola,%20quiero%20comprar%20'Mu%C3%B1eco%20Stitch%20Labubu%20pizza'%20(10,50%20%E2%82%AC)%20desde%20Cositascool.">Contactar por WhatsApp</a>
-        </article>
-      </div>
-    </section>
+    <h3 class="section">Productos para bebés</h3>
+    <div class="empty">
+      <p>Pronto añadiremos cositas cool para bebés.</p>
+      <a class="whatsapp-btn" target="_blank"
+         href="https://api.whatsapp.com/send?phone=34635782353&text=Hola%2C%20av%C3%ADsame%20cuando%20haya%20productos%20para%20beb%C3%A9s%20en%20Cositascool.">
+        Avísame por WhatsApp
+      </a>
+    </div>
   </main>
 </div>
 

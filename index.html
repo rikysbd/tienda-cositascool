@@ -4,123 +4,106 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cositascool</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- MUY IMPORTANTE: apunta a tu carpeta css -->
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-  <input type="checkbox" id="nav-toggle" hidden>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <label class="hamburger" for="nav-toggle" aria-label="Abrir menú">☰</label>
-      <a class="brand" href="index.html">Cositascool <span class="emoji">🛍️</span></a>
-      <nav class="top-nav">
-        <a href="contacto.html" class="pill">Contacto</a>
-      </nav>
-    </div>
-  </header>
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="header">
+      <div class="brand">Cositascool 🛍️</div>
+      <a class="contact-btn" href="Contacto.html">Contacto</a>
+    </header>
 
-  <div class="layout">
+    <!-- Sidebar -->
     <aside class="sidebar">
-      <div class="sidebar-inner">
-        <div class="sidebar-title">Categorías</div>
-        <nav class="side-nav">
-          <a class="active" href="index.html">🏠 Inicio</a>
-          <a href="perritos.html">🐶 Perritos</a>
-          <a href="coche.html">🚗 Coche</a>
-          <a href="hogar.html">🏡 Hogar</a>
-        </nav>
-      </div>
+      <h3>Categorías</h3>
+      <nav class="category-nav">
+        <a href="index.html" class="active">🏠 Inicio</a>
+        <a href="Perritos.html">🐶 Perritos</a>
+        <a href="Coche.html">🚗 Coche</a>
+        <a href="Hogar.html">🏡 Hogar</a>
+      </nav>
     </aside>
 
-    <main class="content">
+    <!-- Contenido principal -->
+    <main class="main">
+      <!-- Hero -->
       <section class="hero">
-        <div class="container">
-          <h1>Cositas cool para tu día a día ✨</h1>
-          <p>Productos pequeños, originales y listos para pedir por WhatsApp.</p>
-        </div>
+        <h1>Cositas cool para tu día a día ✨</h1>
+        <p>Productos pequeños, originales y listos para pedir por WhatsApp.</p>
       </section>
 
-      <section class="container">
-        <h2 class="section-title">Todos los productos</h2>
-        <div class="grid">
+      <h2>Todos los productos</h2>
 
-          <!-- 1 -->
-          <article class="card">
-            <div class="img-wrap">
-              <img src="images/ventosa-movil.jpg" alt="Ventosa para móvil">
-            </div>
-            <h3 class="title">Ventosa para móvil</h3>
-            <p class="price">€6,40</p>
-            <a class="btn btn-wa" target="_blank"
-               href="https://api.whatsapp.com/send?phone=34635782353&text=Hola,%20quiero%20comprar%20%22Ventosa%20para%20m%C3%B3vil%22%20(6,40%20%E2%82%AC)%20desde%20Cositascool.">
-              Contactar por WhatsApp
-            </a>
-          </article>
+      <!-- Grid de productos -->
+      <section class="product-grid">
 
-          <!-- 2 -->
-          <article class="card">
-            <div class="img-wrap">
-              <img src="images/stitch-pizza.png" alt="Muñeco Stitch Labubu pizza">
-            </div>
-            <h3 class="title">Muñeco Stitch Labubu pizza</h3>
-            <p class="price">€10,50</p>
-            <a class="btn btn-wa" target="_blank"
-               href="https://api.whatsapp.com/send?phone=34635782353&text=Hola,%20quiero%20comprar%20%22Mu%C3%B1eco%20Stitch%20Labubu%20pizza%22%20(10,50%20%E2%82%AC)%20desde%20Cositascool.">
-              Contactar por WhatsApp
-            </a>
-          </article>
+        <!-- Producto 1 -->
+        <article class="product-card">
+          <img class="thumb" src="images/ventosa-movil.jpg" alt="Ventosa para móvil">
+          <div class="content">
+            <h3>Ventosa para móvil</h3>
+            <div class="price">€6,40</div>
+            <a
+              class="whatsapp-button"
+              href="https://api.whatsapp.com/send?phone=34635782353&text=Hola%2C%20quiero%20comprar%20%22Ventosa%20para%20m%C3%B3vil%22%20(6%2C40%20%E2%82%AC)%20desde%20Cositascool."
+              target="_blank" rel="noopener"
+            >Contactar por WhatsApp</a>
+          </div>
+        </article>
 
-          <!-- 3 -->
-          <article class="card">
-            <div class="img-wrap">
-              <img src="images/tarjeta-gps.png" alt="Tarjeta con GPS antirrobo o pérdida">
-            </div>
-            <h3 class="title">Tarjeta con GPS antirrobo o pérdida</h3>
-            <p class="price">€15,76</p>
-            <a class="btn btn-wa" target="_blank"
-               href="https://api.whatsapp.com/send?phone=34635782353&text=Hola,%20quiero%20comprar%20%22Tarjeta%20con%20GPS%20antirrobo%20o%20p%C3%A9rdida%22%20(15,76%20%E2%82%AC)%20desde%20Cositascool.">
-              Contactar por WhatsApp
-            </a>
-          </article>
+        <!-- Producto 2 -->
+        <article class="product-card">
+          <img class="thumb" src="images/stitch-pizza.png" alt="Muñeco Stitch Labubu pizza">
+          <div class="content">
+            <h3>Muñeco Stitch Labubu pizza</h3>
+            <div class="price">€10,50</div>
+            <a
+              class="whatsapp-button"
+              href="https://api.whatsapp.com/send?phone=34635782353&text=Hola%2C%20quiero%20comprar%20%22Mu%C3%B1eco%20Stitch%20Labubu%20pizza%22%20(10%2C50%20%E2%82%AC)%20desde%20Cositascool."
+              target="_blank" rel="noopener"
+            >Contactar por WhatsApp</a>
+          </div>
+        </article>
 
-          <!-- 4 -->
-          <article class="card">
-            <div class="img-wrap">
-              <img src="images/lampara-patito.png" alt="Lámpara con forma de patito">
-            </div>
-            <h3 class="title">Lámpara con forma de patito</h3>
-            <p class="price">€15,60</p>
-            <a class="btn btn-wa" target="_blank"
-               href="https://api.whatsapp.com/send?phone=34635782353&text=Hola,%20quiero%20comprar%20%22L%C3%A1mpara%20con%20forma%20de%20patito%22%20(15,60%20%E2%82%AC)%20desde%20Cositascool.">
-              Contactar por WhatsApp
-            </a>
-          </article>
+        <!-- Producto 3 -->
+        <article class="product-card">
+          <img class="thumb" src="images/tarjeta-gps.png" alt="Tarjeta con GPS antirrobo o pérdida">
+          <div class="content">
+            <h3>Tarjeta con GPS antirrobo o pérdida</h3>
+            <div class="price">€15,76</div>
+            <a
+              class="whatsapp-button"
+              href="https://api.whatsapp.com/send?phone=34635782353&text=Hola%2C%20quiero%20comprar%20%22Tarjeta%20con%20GPS%20antirrobo%20o%20p%C3%A9rdida%22%20(15%2C76%20%E2%82%AC)%20desde%20Cositascool."
+              target="_blank" rel="noopener"
+            >Contactar por WhatsApp</a>
+          </div>
+        </article>
 
-          <!-- 5 -->
-          <article class="card">
-            <div class="img-wrap">
-              <img src="images/ventosas-corazon.png" alt="Ventosas móvil corazón">
-            </div>
-            <h3 class="title">Ventosas móvil corazón</h3>
-            <p class="price">€5,30</p>
-            <a class="btn btn-wa" target="_blank"
-               href="https://api.whatsapp.com/send?phone=34635782353&text=Hola,%20quiero%20comprar%20%22Ventosas%20m%C3%B3vil%20coraz%C3%B3n%22%20(5,30%20%E2%82%AC)%20desde%20Cositascool.">
-              Contactar por WhatsApp
-            </a>
-          </article>
+        <!-- Producto 4 -->
+        <article class="product-card">
+          <img class="thumb" src="images/lampara-patito.png" alt="Lámpara con forma de patito">
+          <div class="content">
+            <h3>Lámpara con forma de patito</h3>
+            <div class="price">€15,60</div>
+            <a
+              class="whatsapp-button"
+              href="https://api.whatsapp.com/send?phone=34635782353&text=Hola%2C%20quiero%20comprar%20%22L%C3%A1mpara%20con%20forma%20de%20patito%22%20(15%2C60%20%E2%82%AC)%20desde%20Cositascool."
+              target="_blank" rel="noopener"
+            >Contactar por WhatsApp</a>
+          </div>
+        </article>
 
-        </div>
       </section>
-
-      <footer class="site-footer">
-        <div class="container">
-          <p>© 2025 Cositascool · Hecho con cariño 💖</p>
-        </div>
-      </footer>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      © 2025 Cositascool · Hecho con cariño 💖
+    </footer>
   </div>
+
 </body>
 </html>

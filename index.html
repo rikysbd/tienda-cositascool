@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Cositascool · Inicio</title>
-<link rel="stylesheet" href="css/style.css"/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cositascool · Inicio</title>
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 
-  <!-- Header con logo centrado -->
+  <!-- Header -->
   <header>
-    <h1 class="logo">Cositascool 🛍️</h1>
-    <a class="contact-btn" href="contacto.html">Contacto</a>
+    <div class="header-inner">
+      <h1 class="logo">Cositascool 🛍️</h1>
+      <a class="contact-btn" href="contacto.html">Contacto</a>
+    </div>
   </header>
 
-  <!-- HERO a todo el ancho -->
+  <!-- Hero full width -->
   <section class="hero">
     <h2>Bienvenido a Cositascool ✨</h2>
     <p>Productos originales, divertidos y prácticos para cada ocasión.</p>
   </section>
 
-  <!-- Layout: sidebar izquierda + productos derecha -->
+  <!-- CONTENEDOR: sidebar + main (¡ojo que todo va dentro de .layout!) -->
   <div class="layout">
     <aside class="sidebar">
       <h2>Categorías</h2>
@@ -34,60 +36,59 @@
     </aside>
 
     <main class="main">
-      <section class="products">
-        <h3 class="section">Productos destacados</h3>
-        <div class="grid">
-          <article class="card">
-            <img src="images/lampara-patito.png" alt="Lámpara con forma de patito">
-            <h4>Lámpara con forma de patito</h4>
-            <p class="price">€15,60</p>
-            <a class="whatsapp-btn" target="_blank"
-               href="https://api.whatsapp.com/send?phone=34635782353&text=Hola,%20quiero%20comprar%20'L%C3%A1mpara%20con%20forma%20de%20patito'%20(15,60%20%E2%82%AC)%20desde%20Cositascool.">
-              Contactar por WhatsApp
-            </a>
-          </article>
+      <h3 class="section">Productos destacados</h3>
 
-          <article class="card">
-            <img src="images/stitch-pizza.png" alt="Muñeco Stitch Labubu pizza">
-            <h4>Muñeco Stitch Labubu pizza</h4>
-            <p class="price">€10,50</p>
-            <a class="whatsapp-btn" target="_blank"
-               href="https://api.whatsapp.com/send?phone=34635782353&text=Hola,%20quiero%20comprar%20'Mu%C3%B1eco%20Stitch%20Labubu%20pizza'%20(10,50%20%E2%82%AC)%20desde%20Cositascool.">
-              Contactar por WhatsApp
-            </a>
-          </article>
+      <div class="grid">
+        <article class="card">
+          <img src="images/lampara-patito.png" alt="Lámpara con forma de patito"/>
+          <h4>Lámpara con forma de patito</h4>
+          <p class="price">€15,60</p>
+          <a class="whatsapp-btn" target="_blank"
+             href="https://api.whatsapp.com/send?phone=34635782353&text=Hola,%20quiero%20comprar%20'L%C3%A1mpara%20con%20forma%20de%20patito'%20(15,60%20%E2%82%AC)%20desde%20Cositascool.">
+            Contactar por WhatsApp
+          </a>
+        </article>
 
-          <article class="card">
-            <img src="images/ventosa-movil.jpg" alt="Ventosa para móvil">
-            <h4>Ventosa para móvil</h4>
-            <p class="price">€6,40</p>
-            <a class="whatsapp-btn" target="_blank"
-               href="https://api.whatsapp.com/send?phone=34635782353&text=Hola,%20quiero%20comprar%20'Ventosa%20para%20m%C3%B3vil'%20(6,40%20%E2%82%AC)%20desde%20Cositascool.">
-              Contactar por WhatsApp
-            </a>
-          </article>
+        <article class="card">
+          <img src="images/stitch-pizza.png" alt="Muñeco Stitch Labubu pizza"/>
+          <h4>Muñeco Stitch Labubu pizza</h4>
+          <p class="price">€10,50</p>
+          <a class="whatsapp-btn" target="_blank"
+             href="https://api.whatsapp.com/send?phone=34635782353&text=Hola,%20quiero%20comprar%20'Mu%C3%B1eco%20Stitch%20Labubu%20pizza'%20(10,50%20%E2%82%AC)%20desde%20Cositascool.">
+            Contactar por WhatsApp
+          </a>
+        </article>
 
-          <article class="card">
-            <img src="images/ventosas-corazon.png" alt="Ventosas móvil corazón">
-            <h4>Ventosas móvil corazón</h4>
-            <p class="price">€5,30</p>
-            <a class="whatsapp-btn" target="_blank"
-               href="https://api.whatsapp.com/send?phone=34635782353&text=Hola,%20quiero%20comprar%20'Ventosas%20m%C3%B3vil%20coraz%C3%B3n'%20(5,30%20%E2%82%AC)%20desde%20Cositascool.">
-              Contactar por WhatsApp
-            </a>
-          </article>
+        <article class="card">
+          <img src="images/ventosa-movil.jpg" alt="Ventosa para móvil"/>
+          <h4>Ventosa para móvil</h4>
+          <p class="price">€6,40</p>
+          <a class="whatsapp-btn" target="_blank"
+             href="https://api.whatsapp.com/send?phone=34635782353&text=Hola,%20quiero%20comprar%20'Ventosa%20para%20m%C3%B3vil'%20(6,40%20%E2%82%AC)%20desde%20Cositascool.">
+            Contactar por WhatsApp
+          </a>
+        </article>
 
-          <article class="card">
-            <img src="images/tarjeta-gps.png" alt="Tarjeta con GPS antirrobo o pérdida">
-            <h4>Tarjeta con GPS antirrobo o pérdida</h4>
-            <p class="price">€15,76</p>
-            <a class="whatsapp-btn" target="_blank"
-               href="https://api.whatsapp.com/send?phone=34635782353&text=Hola,%20quiero%20comprar%20'Tarjeta%20con%20GPS%20antirrobo%20o%20p%C3%A9rdida'%20(15,76%20%E2%82%AC)%20desde%20Cositascool.">
-              Contactar por WhatsApp
-            </a>
-          </article>
-        </div>
-      </section>
+        <article class="card">
+          <img src="images/ventosas-corazon.png" alt="Ventosas móvil corazón"/>
+          <h4>Ventosas móvil corazón</h4>
+          <p class="price">€5,30</p>
+          <a class="whatsapp-btn" target="_blank"
+             href="https://api.whatsapp.com/send?phone=34635782353&text=Hola,%20quiero%20comprar%20'Ventosas%20m%C3%B3vil%20coraz%C3%B3n'%20(5,30%20%E2%82%AC)%20desde%20Cositascool.">
+            Contactar por WhatsApp
+          </a>
+        </article>
+
+        <article class="card">
+          <img src="images/tarjeta-gps.png" alt="Tarjeta con GPS antirrobo o pérdida"/>
+          <h4>Tarjeta con GPS antirrobo o pérdida</h4>
+          <p class="price">€15,76</p>
+          <a class="whatsapp-btn" target="_blank"
+             href="https://api.whatsapp.com/send?phone=34635782353&text=Hola,%20quiero%20comprar%20'Tarjeta%20con%20GPS%20antirrobo%20o%20p%C3%A9rdida'%20(15,76%20%E2%82%AC)%20desde%20Cositascool.">
+            Contactar por WhatsApp
+          </a>
+        </article>
+      </div>
     </main>
   </div>
 

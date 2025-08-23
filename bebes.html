@@ -1,27 +1,68 @@
-<!DOCTYPE html><html lang="es"><head>
-<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Cositascool · Bebés</title>
 <link rel="stylesheet" href="css/style.css"/>
-<style>/* pega aquí el MISMO bloque de estilos del de perritos */</style>
-</head><body>
-<header><h1>Cositascool 🛍️</h1><a class="contact-btn" href="contacto.html">Contacto</a></header>
+<style>
+:root{--r:16px}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#fafafa;color:#111}
+header{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid #eee;padding:14px 20px;display:flex;gap:12px;align-items:center;justify-content:space-between}
+header h1{margin:0;font-size:20px}.contact-btn{background:#111;color:#fff;text-decoration:none;padding:10px 14px;border-radius:999px;font-weight:600}
+.layout{max-width:1200px;margin:0 auto;padding:24px;display:grid;grid-template-columns:260px 1fr;gap:24px}
+.sidebar{position:sticky;top:76px}.sidebar h2{margin:0 0 12px;font-size:18px}
+.category-nav{display:flex;flex-direction:column;gap:10px}
+.category-nav a{display:flex;gap:10px;text-decoration:none;color:#222;background:#fff;border:1px solid #eee;border-radius:12px;padding:12px 14px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.main{min-width:0}.hero{background:linear-gradient(90deg,#ffe5f1,#e8f1ff);border:1px solid #f0f0f0;border-radius:var(--r);padding:24px;margin-bottom:20px}
+.hero h2{margin:0 0 8px;font-size:28px}.products h3.section{margin:0 0 14px;font-size:22px}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.card{background:#fff;border:1px solid #eee;border-radius:var(--r);padding:14px;box-shadow:0 1px 2px rgba(0,0,0,.04);display:flex;flex-direction:column}
+.card img{width:100%;height:220px;object-fit:cover;border-radius:12px}
+.card h4{margin:10px 0 6px;font-size:16px}.price{margin:0 0 8px;color:#111;font-weight:700}
+.whatsapp-btn{align-self:flex-start;display:inline-block;background:#25D366;color:#fff;text-decoration:none;font-weight:700;border-radius:10px;padding:8px 12px;font-size:14px;box-shadow:0 2px 0 #1ea955}
+footer{text-align:center;color:#777;font-size:12px;padding:24px 0 40px}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.sidebar{position:static}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Cositascool 🛍️</h1>
+  <a class="contact-btn" href="contacto.html">Contacto</a>
+</header>
+
 <div class="layout">
-<aside class="sidebar"><h2>Categorías</h2><nav class="category-nav">
-  <a href="index.html">🏠 Inicio</a><a href="perritos.html">🐶 Perritos</a><a href="coche.html">🚗 Coche</a><a href="hogar.html">🏡 Hogar</a><a href="bebes.html">👶 Bebés</a>
-</nav></aside>
-<main class="main">
-  <section class="hero"><h2>Cositas para bebés 👶</h2><p>Detalles monos y útiles para los peques.</p></section>
-  <section class="products"><h3 class="section">Productos para bebés</h3>
-    <div class="grid">
-      <article class="card">
-        <img src="images/stitch-pizza.png" alt="Muñeco Stitch Labubu pizza">
-        <h4>Muñeco Stitch Labubu pizza</h4>
-        <p class="price">€10,50</p>
-        <a class="whatsapp-btn" target="_blank" href="https://api.whatsapp.com/send?phone=34635782353&text=Hola,%20quiero%20comprar%20'Mu%C3%B1eco%20Stitch%20Labubu%20pizza'%20(10,50%20%E2%82%AC)%20desde%20Cositascool.">Contactar por WhatsApp</a>
-      </article>
-    </div>
-  </section>
-</main>
+  <aside class="sidebar">
+    <h2>Categorías</h2>
+    <nav class="category-nav">
+      <a href="index.html">🏠 Inicio</a>
+      <a href="perritos.html">🐶 Perritos</a>
+      <a href="coche.html">🚗 Coche</a>
+      <a href="hogar.html">🏡 Hogar</a>
+      <a href="bebes.html">👶 Bebés</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <section class="hero">
+      <h2>Cositas cool para bebés 👶</h2>
+      <p>Detalles útiles, tiernos y originales para los más peques.</p>
+    </section>
+
+    <section class="products">
+      <h3 class="section">Productos para bebés</h3>
+      <div class="grid">
+        <article class="card">
+          <img src="images/stitch-pizza.png" alt="Muñeco Stitch Labubu pizza">
+          <h4>Muñeco Stitch Labubu pizza</h4>
+          <p class="price">€10,50</p>
+          <a class="whatsapp-btn" target="_blank"
+             href="https://api.whatsapp.com/send?phone=34635782353&text=Hola,%20quiero%20comprar%20'Mu%C3%B1eco%20Stitch%20Labubu%20pizza'%20(10,50%20%E2%82%AC)%20desde%20Cositascool.">Contactar por WhatsApp</a>
+        </article>
+      </div>
+    </section>
+  </main>
 </div>
+
 <footer>© 2025 Cositascool · Hecho con cariño 💖</footer>
-</body></html>
+</body>
+</html>
